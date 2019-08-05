@@ -35,11 +35,18 @@ const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
+const Contas = React.lazy(() => import('./views/Contas'));
+const Fornecedores = React.lazy(() => import('./views/Fornecedores'));
+const Produtos = React.lazy(() => import('./views/Produtos'));
+const Estoque = React.lazy(() => import('./views/Estoque'));
+const Movimentacao = React.lazy(() => import('./views/movimientacao'));
+const Atendimento = React.lazy(() => import('./views/Atendimento'));
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/central', name: 'Central', component: Dashboard },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -79,6 +86,12 @@ const routes = [
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
+  { path: '/contas', exact: true, name: 'Contas', component: Contas },
+  { path: '/fornecedores', exact: true, name: 'Fornecedores', component: Fornecedores },
+  { path: '/produtos', exact: true, name: 'Produtos', component: Produtos },
+  { path: '/estoque', exact: true, name: 'Estoque', component: Estoque },
+  { path: '/movimentacao-produtos', exact: true, name: 'Movimentação de Produtos', component: Movimentacao },
+  { path: '/atendimento', exact: true, name: 'Atendimento', component: Atendimento },
 ];
 
 export default routes;
