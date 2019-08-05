@@ -134,6 +134,7 @@ class Atendimento extends Component{
       </CardBody>
       <CardFooter>
         <div style={{textAlign: 'right'}}>
+          <button className="btn btn-success mr-2 mb-3"><i className="fa fa-check"></i> Finalizar Compra</button>
           <button className="btn btn-danger mb-3"><i className="fa fa-trash"></i> Cancelar Compra</button>
         </div>
       </CardFooter>
